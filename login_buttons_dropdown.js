@@ -74,7 +74,7 @@
 	// loginButtonsLoggedOutDropdown template and related
 	//
 
-	Template._loginButtonsLoggedOutDropdown.events({
+	Template._loginButtonsLoggedOutAllServices.events({
 		'click #login-buttons-password': function(event) {
 			event.stopPropagation();
 			loginOrSignup();

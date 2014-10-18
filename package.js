@@ -29,6 +29,7 @@ Package.on_use(function (api) {
 		'login_buttons_single.html',
 		'login_buttons_dropdown.html',
 		'login_buttons_dialogs.html',
+		'login_form.html',
 
 		'login_buttons_session.js',
 
@@ -36,6 +37,8 @@ Package.on_use(function (api) {
 		'login_buttons_single.js',
 		'login_buttons_dropdown.js',
 		'login_buttons_dialogs.js',
+		'login_form.js',
+
 		'accounts_ui.styl'
 		], 'client')
 
