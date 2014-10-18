@@ -54,7 +54,12 @@
 		dropdownVisible: function() {
 			return loginButtonsSession.get('dropdownVisible');
 		},
+		additionalLoggedInDropdownActions: function () {
+		  return Template._loginButtonsAdditionalLoggedInDropdownActions !== undefined;
+		}
+	});
 
+	Template._loginButtonsLoggedInDropdownActions.helpers({
 		allowChangingPassword: function() {
 			// it would be more correct to check whether the user has a password set,
 			// but in order to do that we'd have to send more data down to the client,
@@ -63,10 +68,6 @@
 			// instead we use the heuristic: if the user has a username or email set.
 			var user = Meteor.user();
 			return user.username || (user.emails && user.emails[0] && user.emails[0].address);
-		},
-
-		additionalLoggedInDropdownActions: function () {
-		  return Template._loginButtonsAdditionalLoggedInDropdownActions !== undefined;
 		}
 	});
 
