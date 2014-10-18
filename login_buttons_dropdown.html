@@ -34,7 +34,10 @@
 		<button class="btn btn-default btn-block" id="login-buttons-open-change-password">{{i18n '_loginButtonsLoggedInDropdownActions.password'}}</button>
 	{{/if}}
 
-	<button class="btn btn-block btn-primary" id="login-buttons-logout">{{i18n '_loginButtonsLoggedInDropdownActions.signOut'}}</button>
+	<button class="btn btn-block btn-primary" id="login-buttons-logout">
+		{{i18n '_loginButtonsLoggedInDropdownActions.signOut'}}
+		<span class="fa fa-sign-out"></span>
+	</button>
 </template>
 
 <!--            -->
@@ -85,6 +88,7 @@
 			{{#if inSignupFlow}}
 				{{i18n '_loginButtonsLoggedOutPasswordService.create'}}
 			{{else}}
+				<span class="fa fa-sign-in"></span>
 				{{i18n '_loginButtonsLoggedOutPasswordService.signIn'}}
 			{{/if}}
 		</button>
